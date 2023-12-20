@@ -5,6 +5,7 @@
 ### 项目名称
 
 # Vue3 + Vite + TS + Tailwind CSS 纯净模板
+
 - **如果您觉得项目不错请帮忙点亮Star，让更多人了解到这个项目，也方便您下次寻找这个项目**
 
 项目的目录结构如下：
@@ -26,11 +27,16 @@
 - `vite.config.ts`: Vite配置文件
 - `yarn.lock`: Yarn锁文件
 
+![Uploading image.png…]()
 
 
 ## 介绍
 
 这是一个使用 Vue3、Vite、ESLint、Pinia、Tailwind CSS 和 Element-Plus 框架的纯净模板项目。下载以后就可以直接使用，它旨在为开发者提供一个干净、高效的起点，适用于快速启动新的前端项目。主要作用为：简化项目基础环境搭建，与依赖冲突的解决，以便开发者进行快速项目开发。
+
+
+## GitHub地址 ：
+[https://github.com/fengjun2022/Vue3-Vite-TS-Tailwind-CSS-template/tree/main]
 
 ## 技术栈
 
@@ -95,7 +101,7 @@
   或者使用 Yarn：
 
   ```
-  yarn build
+  yarn build:prod
   ```
 
 ## 项目结构
@@ -129,4 +135,4 @@ csharpCopy code项目根目录
 
 ## 许可
 
-MIT License           
+MIT License    
