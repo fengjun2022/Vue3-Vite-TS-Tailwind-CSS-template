@@ -50,7 +50,7 @@
 1. 克隆项目到本地：
 
    ```
-   git clone [项目URL]
+   git clone https://github.com/fengjun2022/Vue3-Vite-TS-Tailwind-CSS-template.git
    ```
 
 2. 进入项目目录：
