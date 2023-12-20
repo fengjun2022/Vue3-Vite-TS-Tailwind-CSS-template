@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "ES2016",
+    /* 指定 ECMAScript 目标版本: 'ES3' (默认), 'ES5', 'ES6'/'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', 'ESNext'。
+       'ESNext' 表示使用最新的版本。 */
+
+    "module": "ESNext",
+    /* 指定模块代码生成: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', 或 'ESNext'。
+       'ESNext' 表示使用最新的模块标准。 */
+
+    "strict": true,
+    /* 开启所有严格的类型检查选项。 */
+
+    "skipLibCheck":true,
+    /*  elemebt-plus 与vue-tsc 打包时版本冲突看了issues让开启这个。经过测试可以正常打包否则打包报错  主要原因是 elemebt-plus缺少声明文件，可以考虑换框架*/
+//    这些库中的类型声明文件有错误，这可能会导致编译失败。设置 "skipLibCheck": true 可以让编译过程忽略这些错误，虽然这不是解决类型错误的最佳方式，但它可以作为暂时的解决方案，让你继续开发，直到库作者修复了这些问题。
+
+
+    "jsx": "preserve",
+    /* 指定 JSX 代码的生成: 'preserve', 'react-native', 或 'react'。
+       'preserve' 表示不转换 JSX，以便后续的转换步骤（如 Babel）可以处理它。 */
+
+    "moduleResolution": "node",
+    /* 选择模块解析策略: 'node' (Node.js) 或 'classic' (TypeScript pre-1.6)。
+       'node' 是 Node.js 风格的模块解析。 */
+
+    "experimentalDecorators": true,
+    /* 启用实验性的装饰器支持，这在使用 Vue 或者 Angular 等框架时是必须的。 */
+
+    "esModuleInterop": true,
+    /* 允许从没有默认导出的模块中默认导入。这不会影响代码的输出，只是影响类型检查。 */
+
+    "allowSyntheticDefaultImports": true,
+    /* 允许对不具有默认导出的模块进行默认导入，这只会影响类型检查而不会影响代码输出。 */
+
+    "sourceMap": true,
+    /* 生成相应的 '.map' 文件，它们可以用于调试以及将编译的 JavaScript 映射回原始的 TypeScript 代码。 */
+
+    /* 识别@/路径 */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+
+    /* Bundler mode */
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+//  识别文件类型
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
